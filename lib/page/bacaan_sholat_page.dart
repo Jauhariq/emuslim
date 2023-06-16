@@ -97,7 +97,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                     } else if (data.hasData) {
                       var items = data.data as List<ModelBacaan>;
                       return ListView.builder(
-                          itemCount: items == null ? 0 : items.length,
+                          itemCount: items.length,
                           itemBuilder: (context, index) {
                             return Card(
                               shape: RoundedRectangleBorder(

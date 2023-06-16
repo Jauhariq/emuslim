@@ -95,7 +95,7 @@ class _NiatSholatState extends State<NiatSholat> {
                     } else if (data.hasData) {
                       var items = data.data as List<ModelNiat>;
                       return ListView.builder(
-                          itemCount: items == null ? 0 : items.length,
+                          itemCount: items.length,
                           itemBuilder: (context, index) {
                             return Card(
                               shape: RoundedRectangleBorder(

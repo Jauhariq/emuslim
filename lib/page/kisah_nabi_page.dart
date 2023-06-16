@@ -96,7 +96,7 @@ class _KisahNabiState extends State<KisahNabi> {
                     } else if (data.hasData) {
                       var items = data.data as List<ModelKisahNabi>;
                       return ListView.builder(
-                          itemCount: items == null ? 0 : items.length,
+                          itemCount: items.length,
                           itemBuilder: (context, index) {
                             return GestureDetector(
                               onTap: () {

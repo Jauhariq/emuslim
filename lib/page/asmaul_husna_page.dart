@@ -97,7 +97,7 @@ class _AsmaulHusnaState extends State<AsmaulHusna> {
                     } else if (data.hasData) {
                       var items = data.data as List<ModelAsmaulHusna>;
                       return ListView.builder(
-                          itemCount: items == null ? 0 : items.length,
+                          itemCount: items.length,
                           itemBuilder: (context, index) {
                             return Card(
                               shape: RoundedRectangleBorder(
